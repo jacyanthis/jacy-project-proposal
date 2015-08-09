@@ -1,24 +1,31 @@
-# Flux-capacitr
+# SeaMail
 
 [Heroku link][heroku]
 
-[heroku]: http://flux-capacitr.herokuapp.com
+[heroku]:
 
 ## Minimum Viable Product
-Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
+SeaMail is inspired by GMail on a Rails and Backbone framework. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [x] Create accounts
-- [x] Create sessions (log in)
-- [x] Create blogs
-- [x] Create blog posts
-- [ ] View blogs and posts
-- [ ] Subscribe to blogs
-- [ ] View a feed of subscribed blogs
-- [ ] Tag blog posts
-- [ ] Search for blogs by title
-- [ ] Search for posts by tag
+Level 1 Functionality:
+- [ ] Create accounts
+- [ ] Create sessions (log in)
+- [ ] Create emails
+- [ ] View emails
+- [ ] View emails by folder
+- [ ] View emails by page
+- [ ] Move emails to the trash
+- [ ] Star/flag emails
+
+Level 2 Functionality:
+- [ ] Send emails through a server
+- [ ] Receive emails through a server
+- [ ] Search emails by title/content
+- [ ] Search emails by contact
+- [ ] Chat with other users
+- [ ] Attach files to emails
 
 ## Design Docs
 * [View Wireframes][views]
@@ -29,17 +36,17 @@ Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
 
 ## Implementation Timeline
 
-### Phase 1: User Authentication, Blog Creation (~1 day)
+### Phase 1: User Authentication, Email Creation (~1 day)
 I will implement user authentication in Rails based on the practices learned at
-App Academy. By the end of this phase, users will be able to create blogs using
+App Academy. By the end of this phase, users will be able to create email using
 a simple text form in a Rails view. The most important part of this phase will
 be pushing the app to Heroku and ensuring that everything works before moving on
 to phase 2.
 
 [Details][phase-one]
 
-### Phase 2: Viewing Blogs and Posts (~2 days)
-I will add API routes to serve blog and post data as JSON, then add Backbone
+### Phase 2: Viewing Emails (~2 days)
+I will add API routes to serve email data as JSON, then add Backbone
 models and collections that fetch data from those routes. By the end of this
 phase, users will be able to create blogs and view both blogs and posts, all
 inside a single Backbone app.
