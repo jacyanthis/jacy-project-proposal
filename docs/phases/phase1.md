@@ -3,20 +3,18 @@
 ## Rails
 ### Models
 * User
-* Blog
-* Post
+* Email
 
 ### Controllers
 * UsersController (create, new)
 * SessionsController (create, new, destroy)
-* BlogsController (create, new, show)
-* PostsController (create, new, show)
+* EmailsController (create, new, show)
 
 ### Views
 * users/new.html.erb
 * session/new.html.erb
-* blogs/new.html.erb
-* blogs/show.html.erb
+* emails/new.html.erb
+* emails/index.html.erb
 
 ## Backbone
 ### Models
