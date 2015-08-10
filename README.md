@@ -38,7 +38,7 @@ to phase 2.
 
 [Details][phase-one]
 
-### Phase 2: Viewing Emails (by Folder) (~1 days)
+### Phase 2: Viewing Emails by Folder (~1 days)
 I will add API routes to serve email data as JSON, then add Backbone
 models and collections that fetch data from those routes. By the end of this
 phase, users will be able to create and view emails, all inside a single Backbone 
