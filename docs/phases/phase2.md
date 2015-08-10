@@ -1,29 +1,26 @@
-# Phase 2: Viewing Blogs and Posts
+# Phase 2: Viewing Emails by Folder (~1 day)
 
 ## Rails
 ### Models
 
 ### Controllers
-Api::BlogsController (create, destroy, index, show)
-Api::PostsController (create, destroy, show, update)
+Api::EmailsController (create, destroy, index, show)
 
 ### Views
-* blogs/show.json.jbuilder
+* emails/index.json.jbuilder
+* emails/show.json.jbuilder
 
 ## Backbone
 ### Models
-* Blog (parses nested `posts` association)
-* Post
+* Email
 
 ### Collections
-* Blogs
-* Posts
+* Emails
 
 ### Views
-* BlogForm
-* BlogShow (composite view, contains PostsIndex subview)
-* PostsIndex (composite view, contains PostsIndexItem subviews)
-* PostsIndexItem
-* PostShow
+* EmailForm
+* EmailShow
+* EmailsIndex (composite view, contains EmailIndexItem subviews)
+* EmailIndexItem
 
 ## Gems/Libraries
