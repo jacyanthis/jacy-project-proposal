@@ -54,9 +54,9 @@ ability to `empty`, destroying the emails contained inside.
 [Details][phase-three]
 
 ### Phase 4: Sending/receiving Emails (~2 days)
-I will use Action Mailer to set up sending and receiving emails. I don't think
-a third-party library will be necessary for this, but I'm not sure. I'll try
-doing it with Rails at first, and if necessary, use something like `SendGrid`.
+I will use Action Mailer to set up sending and receiving emails across the internet. 
+I don't think a third-party library will be necessary for this, but I'm not sure. 
+I'll try doing it with Rails at first, and if necessary, use something like `SendGrid`.
 
 [Details][phase-four]
 
