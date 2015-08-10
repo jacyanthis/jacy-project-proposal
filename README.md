@@ -9,23 +9,16 @@ SeaMail is inspired by GMail on a Rails and Backbone framework. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-Level 1 Functionality:
+Key Functionality:
 - [ ] Create accounts
 - [ ] Create sessions (log in)
 - [ ] Create emails
 - [ ] View emails
 - [ ] View emails by folder
-- [ ] View emails by page
 - [ ] Move emails to the trash
 - [ ] Star/flag emails
-
-Level 2 Functionality:
 - [ ] Send emails through a server
 - [ ] Receive emails through a server
-- [ ] Search emails by title/content
-- [ ] Search emails by contact
-- [ ] Chat with other users
-- [ ] Attach files to emails
 
 ## Design Docs
 * [View Wireframes][views]
@@ -45,50 +38,36 @@ to phase 2.
 
 [Details][phase-one]
 
-### Phase 2: Viewing Emails (~2 days)
+### Phase 2: Viewing Emails (by Folder) (~1 days)
 I will add API routes to serve email data as JSON, then add Backbone
 models and collections that fetch data from those routes. By the end of this
-phase, users will be able to create blogs and view both blogs and posts, all
-inside a single Backbone app.
+phase, users will be able to create and view emails, all inside a single Backbone 
+app. Emails will also be sorted by folders.
 
 [Details][phase-two]
 
-### Phase 3: Editing and Displaying Posts (~2 days)
-I plan to use third-party libraries to add functionality to the `PostForm` and
-`PostShow` views in this phase. First I'll need to add a Markdown editor to the
-`PostForm`, and make sure that the Markdown is properly escaped and formatted in
-the `PostShow` view. I also plan to integrate Filepicker for file upload so
-users can add images to blog posts.
+### Phase 3: Star/flag Emails, Trash Folder (~0.5 days)
+I will add star/flag attributes to emails as an organization tool outside of the 
+folder system. I will also make an additional trash folder, with the special 
+ability to `empty`, destroying the emails contained inside.
 
 [Details][phase-three]
 
-### Phase 4: User Feeds (~1-2 days)
-I'll start by adding a `feed` route that uses the `current_user`'s
-`subscribed_blogs` association to serve a list of blog posts ordered
-chronologically. On the Backbone side, I'll make a `FeedShow` view whose `posts`
-collection fetches from the new route.  Ultimately, this will be the page users
-see after logging in.
+### Phase 4: Sending/receiving Emails (~2 days)
+I will use Action Mailer to set up sending and receiving emails. I don't think
+a third-party library will be necessary for this, but I'm not sure. I'll try
+doing it with Rails at first, and if necessary, use something like `SendGrid`.
 
 [Details][phase-four]
 
-### Phase 5: Searching for Blogs and Posts (~2 days)
-I'll need to add `search` routes to both the Blogs and Posts controllers. On the
-Backbone side, there will be a `SearchResults` composite view has `BlogsIndex`
-and `PostsIndex` subviews. These views will use plain old `blogs` and `posts`
-collections, but they will fetch from the new `search` routes.
-
-[Details][phase-five]
-
 ### Bonus Features (TBD)
-- [ ] "Like" button and counter for posts
-- [ ] Custom blog urls
-- [ ] Pagination/infinite scroll
-- [ ] Activity history (e.g. likes, reblogs, taggings)
-- [ ] Post types (image posts, quote posts, etc)
-- [ ] Reblogging
+- [ ] View emails by page
+- [ ] Search emails by title/content
+- [ ] Search emails by contact
+- [ ] Chat with other users
+- [ ] Attach files to emails
 - [ ] Multiple sessions/session management
 - [ ] User avatars
-- [ ] Typeahead search bar
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md
