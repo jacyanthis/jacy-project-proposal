@@ -16,8 +16,8 @@ Welcome aboard, matey! SeaMail is inspired by Gmail on a Rails and Backbone fram
 - [ ] View emails by folder
 - [ ] Move emails to the trash
 - [ ] Star/flag emails
-- [ ] Send emails through a server
-- [ ] Receive emails through a server
+- [ ] Send emails through an SMTP server
+- [ ] Receive emails through an SMTP server
 
 ## Design Docs
 * [View Wireframes][views]
