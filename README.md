@@ -5,11 +5,10 @@
 [heroku]:
 
 ## Minimum Viable Product
-Welcome aboard! SeaMail is inspired by Gmail on a Rails and Backbone framework. Users can:
+Welcome aboard, matey! SeaMail is inspired by Gmail on a Rails and Backbone framework. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-Key Functionality:
 - [ ] Create accounts
 - [ ] Create sessions (log in)
 - [ ] Create emails
